@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf8f4;
+  --surface: #ffffff;
+  --surface-muted: #f5efe6;
+  --foreground: #241a12;
+  --foreground-muted: #7a6a58;
+  --border: #ead9c4;
+  --border-strong: #d9c2a0;
+
+  --accent: #b8531f;
+  --accent-hover: #9a4419;
+  --accent-soft: #fdf0e6;
+  --accent-soft-border: #f3cfa8;
+  --accent-foreground: #ffffff;
+
+  --gold: #c8912b;
+  --gold-soft: #fbf2df;
+
+  --status-good-bg: #ecfdf5;
+  --status-good-border: #a7f3d0;
+  --status-good-text: #047857;
+
+  --status-warning-bg: #fffbeb;
+  --status-warning-border: #fde68a;
+  --status-warning-text: #b45309;
+
+  --status-critical-bg: #fef2f2;
+  --status-critical-border: #fecaca;
+  --status-critical-text: #b91c1c;
+
+  --status-neutral-bg: #f5efe6;
+  --status-neutral-border: #ead9c4;
+  --status-neutral-text: #7a6a58;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #16110c;
+    --surface: #211a13;
+    --surface-muted: #2b2118;
+    --foreground: #f7ece0;
+    --foreground-muted: #b3a08a;
+    --border: #3a2e21;
+    --border-strong: #4d3d2b;
+
+    --accent: #e37a3d;
+    --accent-hover: #ef9560;
+    --accent-soft: #2b1d12;
+    --accent-soft-border: #5c3a1e;
+    --accent-foreground: #1a0f06;
+
+    --gold: #e0ac4c;
+    --gold-soft: #2e2412;
+
+    --status-good-bg: #0f2b22;
+    --status-good-border: #16513f;
+    --status-good-text: #6ee7b7;
+
+    --status-warning-bg: #2b2109;
+    --status-warning-border: #7c5a0f;
+    --status-warning-text: #fbbf24;
+
+    --status-critical-bg: #2b1212;
+    --status-critical-border: #7f1d1d;
+    --status-critical-text: #fca5a5;
+
+    --status-neutral-bg: #2b2118;
+    --status-neutral-border: #3a2e21;
+    --status-neutral-text: #b3a08a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--border);
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
